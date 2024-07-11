@@ -41,7 +41,9 @@ body {
 ::selection {
     color: #FF5722;
 }
-
+button{
+    cursor: pointer;
+}
 /* Navbar */
 nav {
     position: fixed;
@@ -180,7 +182,7 @@ nav img:hover{
     border: none;
     background-color: #FF8C42;
     color: #F5F5F5;
-    border: 0.5px solid #242424;
+    border: 0.5px solid #F5F5F5;
     border-radius: 4px;
     transition: color 0.7s ease, background-color 0.6s ease;
 }
@@ -549,7 +551,7 @@ iframe {
     }
 
     .intro-fonts button {
-        font-size: 8px;
+        font-size: 14px;
         padding: 8px 16px;
     }
 
