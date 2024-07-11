@@ -161,6 +161,10 @@ nav img:hover{
     z-index: 1;
 }
 
+.intro-fonts a{
+    text-decoration: none;
+}
+
 .intro-item img{
     max-height: auto;
     width: 100%;
@@ -522,7 +526,7 @@ iframe {
     }
     .navbar{
         gap: 10px;
-        font-size: 14px;
+        font-size: 12px;
     }
     .navbar a {
         padding: 4px 8px;
