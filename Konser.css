@@ -565,14 +565,13 @@ iframe {
     
     .intro-fonts {
         position: absolute;
-        bottom: 8%; 
+        bottom: 8%;
         left: 50%; 
     }
 
     .intro-fonts button {
         font-size: 10px;
         padding: 8px 16px;
-        margin-bottom: -50px;
     }
 
     .intro-item .background-image{
