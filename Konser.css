@@ -158,7 +158,7 @@ nav img:hover{
 
 .intro-fonts {
     position: absolute;
-    bottom: 10%; 
+    bottom: 15%; 
     left: 50%; 
     transform: translateX(-50%);
     z-index: 1;
@@ -565,7 +565,7 @@ iframe {
     
     .intro-fonts {
         position: absolute;
-        bottom: 50px; 
+        bottom: 8%; 
         left: 50%; 
     }
 
