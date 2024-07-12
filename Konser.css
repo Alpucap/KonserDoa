@@ -525,6 +525,7 @@ iframe {
     nav{
         position: static;
     }
+    
     .navbar{
         gap: 10px;
         font-size: 12px;
@@ -556,8 +557,9 @@ iframe {
     }
 
     .intro-fonts button {
-        font-size: 14px;
+        font-size: 10px;
         padding: 8px 16px;
+        margin-bottom: -50px;
     }
 
     .intro-item img{
@@ -678,6 +680,9 @@ iframe {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
+    nav{
+        position: static;
+    }
     .navbar a {
         margin: 5px 0;
     }
@@ -685,6 +690,7 @@ iframe {
     .intro-fonts button {
         font-size: 12px;
         padding: 6px 12px;
+        margin-bottom: 1200px;
     }
 
     .slide a {
@@ -694,10 +700,50 @@ iframe {
 
     .overlay {
         padding: 5px;
+        font-size: 10px;
+    }
+
+    .location {
+        flex-direction: column;
     }
 
     .location-item {
-        max-width: 100%;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        justify-content: center; 
+        gap: 20px;
+    }
+
+    iframe{
+        max-width: fit-content;
+    }
+
+    .location-item h1{
+        font-size: 30px;
+        font-weight: 900;
+        letter-spacing: 10px;
+        margin: 10px 0;
+    }
+    
+    .location-item h2{
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-wrap:wrap;
+        margin: 15px 0;
+        margin-bottom: 20px;
+    }
+
+    .location img {
+        width: 100%;
+        min-height: 500px;
+        height: auto;
+        max-height: 700px;
+        filter: brightness(30%) blur(3px);
     }
 
     .dropdown-header {
@@ -721,6 +767,11 @@ iframe {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    nav{
+        background: rgba(16, 22, 23, .8);
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(10px);
+    }
     .navbar a {
         margin: 10px 5px;
     }
@@ -738,7 +789,7 @@ iframe {
 
     .overlay {
         padding: 10px;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 300;
         letter-spacing: 1px;
     }
@@ -746,7 +797,7 @@ iframe {
     .location-item {
         max-width: 100%;
         height: 50;
-        text-align: ju;
+
     }
 
     .dropdown-header {
@@ -822,7 +873,7 @@ iframe {
     .intro-fonts button {
         font-size: 18px;
         padding: 12px 24px;
-        margin-top: 0px;
+        margin-bottom: -50px;
     }
 
     .slide a {
