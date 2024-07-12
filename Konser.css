@@ -151,11 +151,14 @@ nav img:hover{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .intro-fonts {
     position: absolute;
-    bottom: 10px; 
+    bottom: 15%; 
     left: 50%; 
     transform: translateX(-50%);
     z-index: 1;
@@ -166,7 +169,7 @@ nav img:hover{
     color:#F5F5F5;
 }
 
-.intro-item img{
+.intro-item .background-image{
     max-height: auto;
     width: 100%;
     max-width: 100%;
@@ -174,8 +177,20 @@ nav img:hover{
     position: relative;
     z-index: -1;
     filter: opacity(50%);
-    filter: brightness(50%);
+    filter: brightness(30%);
     border-radius: 4px;
+    display: block;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    height: auto;
+    z-index: 10; 
+    filter: drop-shadow(0 0 4px rgba(255, 140, 66, 0.5));
 }
 
 .intro-item button {
@@ -252,47 +267,45 @@ nav img:hover{
     100% { opacity: 0; transform: translateX(-100%); }
 }
 
-@media screen and (max-width: 768px) {
-    .slide {
-        font-size: 16px;
-        letter-spacing: 8px;
-        opacity: 0; 
-    }
-    @keyframes slide {
-        0% { opacity: 0; transform: translateX(200%); }
-        10% { opacity: 1; transform: translateX(0); }
-        100% { opacity: 0; transform: translateX(-200%); }
-    }
-}
+
 
 /* About Us */
 .about {
     margin: 0;
     position: relative; 
+    height: auto;
 }
 
 .overlay {
-    margin: 10px 20px;
-    width: auto;
+    margin: 10px 10px;
+    width: 80%;
 }
 
 .overlay h1 {
-    font-size: 48px;
+    font-size: 56px;
     font-weight: 900;
     letter-spacing: 10px;
-    margin: 10px 0;
+    text-align: center; 
+    margin-bottom: 100px;
+}
+
+.overlay h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 4px;
     text-align: center; 
 }
 
+
 .overlay p {
-    text-align: justify;
+    text-align: center;
 }
 
 .carousel {
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 500px;
+    height: 700px;
 }
 
 .carousel-inner {
@@ -323,14 +336,6 @@ nav img:hover{
     color: #F5F5F5;
     text-align: center;
     z-index: 1; 
-}
-
-@media screen and (max-width: 768px) {
-    .overlay {
-        font-size: 48px;
-        font-weight: 300;
-        letter-spacing: 2px;
-    }
 }
 
 
@@ -382,6 +387,14 @@ iframe {
 }
 
 .location-item h2{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-wrap:wrap;
+    margin: 10px 0;
+}
+
+.location-item p{
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -562,7 +575,7 @@ iframe {
         margin-bottom: -50px;
     }
 
-    .intro-item img{
+    .intro-item .background-image{
         max-height: auto;
         width: 100%;
         max-width: 100%;
@@ -570,17 +583,32 @@ iframe {
         position: relative;
         z-index: -1;
         filter: opacity(50%);
-        filter: brightness(50%);
+        filter: brightness(30%);
         border-radius: 4px;
+    }
+    
+    .overlay-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; 
+        height: auto;
+        z-index: 10; 
     }
 
     .slideshow-container {
         flex-direction: column;
+        height: 20px;
+    }
+
+    .slide{
+        font-size: 14px;
+        letter-spacing: 2px;
     }
 
     .slide a {
-        font-size: 20px;
-        padding: 8px 16px;
+        padding: 8px 12px;
     }
 
     .carousel {
@@ -596,15 +624,19 @@ iframe {
         font-size: 24px;
         font-weight: 900;
         letter-spacing: 4px;
-        margin: 10px 0;
         text-align: center; 
+        margin-bottom: 50px;
     }
     
+    .overlay h2 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-align: center; 
+    }
     .overlay p {
         font-size: 12px;
-        letter-spacing: 2px;
-        text-align: justify;
-        text-wrap:wrap;
+        letter-spacing: 1px;
     }
 
     .location {
@@ -629,14 +661,23 @@ iframe {
     .location-item h1{
         font-size: 30px;
         font-weight: 900;
-        letter-spacing: 10px;
+        letter-spacing: 4px;
         margin: 10px 0;
     }
     
     .location-item h2{
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        text-wrap:wrap;
+        margin: 15px 0;
+        margin-bottom: 20px;
+    }
+
+    .location-item p{
         font-size: 10px;
         font-weight: 500;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
         text-wrap:wrap;
         margin: 15px 0;
         margin-bottom: 20px;
